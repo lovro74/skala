@@ -1,0 +1,455 @@
+{
+  "start": "2026-11-16",
+  "sets": [
+    {
+      "date": "2026-11-16",
+      "id": "kofein",
+      "question": "Koliko kofeina ima u jednoj porciji?",
+      "sub": "Uobičajene porcije: espresso 1 šalica, crni čaj 240 ml, kola 330 ml, energetsko piće 250 ml, kava bez kofeina 240 ml.",
+      "scale": {"unit":"mg kofeina po porciji","min":0,"max":100,"log":false,"ticks":[0,25,50,75,100]},
+      "items": [
+        {"name":"Espresso","value":63},
+        {"name":"Crni čaj","value":47},
+        {"name":"Kola","value":32},
+        {"name":"Energetsko piće","value":80},
+        {"name":"Kava bez kofeina","value":2}
+      ],
+      "note": "Količina kofeina ovisi o zrnu, pripremi i veličini porcije; ovdje su tipične vrijednosti."
+    },
+    {
+      "date": "2026-11-17",
+      "id": "vrhovi",
+      "question": "Koliko je visok vrh?",
+      "sub": "Nadmorska visina najvišeg vrha.",
+      "scale": {"unit":"m nadmorske visine","min":0,"max":5000,"log":false,"ticks":[0,1000,2000,3000,4000,5000]},
+      "items": [
+        {"name":"Sljeme","value":1035},
+        {"name":"Vaganski vrh","value":1757},
+        {"name":"Dinara","value":1831},
+        {"name":"Triglav","value":2864},
+        {"name":"Mont Blanc","value":4806}
+      ],
+      "note": "Visine su zaokružene na metar; službena mjerenja vrhova povremeno se revidiraju."
+    },
+    {
+      "date": "2026-11-18",
+      "id": "srce",
+      "question": "Koliko puta u minuti otkuca srce?",
+      "sub": "Srce u mirovanju, tipične vrijednosti za odrasle jedinke.",
+      "scale": {"unit":"otkucaja u minuti, logaritamska skala: svaki razmak je deseterostruk","min":10,"max":1000,"log":true,"ticks":[10,100,1000]},
+      "items": [
+        {"name":"Slon","value":30},
+        {"name":"Odrasla osoba","value":70},
+        {"name":"Pas","value":100},
+        {"name":"Mačka","value":140},
+        {"name":"Miš","value":600}
+      ],
+      "note": "Raspon je velik od jedinke do jedinke, pa su ovo okvirne tipične vrijednosti."
+    },
+    {
+      "date": "2026-11-19",
+      "id": "izumi",
+      "question": "Kada je nastao izum?",
+      "sub": "Godina koja se najčešće navodi.",
+      "scale": {"unit":"godina","min":1400,"max":2000,"log":false,"ticks":[1400,1500,1600,1700,1800,1900,2000]},
+      "items": [
+        {"name":"Tiskarski stroj","value":1450},
+        {"name":"Fotografija","value":1839},
+        {"name":"Telefon","value":1876},
+        {"name":"Penicilin","value":1928},
+        {"name":"World Wide Web","value":1989}
+      ],
+      "note": "Tiskarski stroj oko 1450., prvi praktični fotografski postupak 1839., telefon 1876., otkriće penicilina 1928., prijedlog weba 1989."
+    },
+    {
+      "date": "2026-11-20",
+      "id": "dubina-mora",
+      "question": "Koliko je duboko more?",
+      "sub": "Najdublja poznata točka.",
+      "scale": {"unit":"m dubine","min":0,"max":11000,"log":false,"ticks":[0,2000,4000,6000,8000,10000]},
+      "items": [
+        {"name":"Baltičko more","value":459},
+        {"name":"Jadransko more","value":1233},
+        {"name":"Crno more","value":2212},
+        {"name":"Sredozemno more","value":5267},
+        {"name":"Marijanski rov","value":10935}
+      ],
+      "note": "Dubine su zaokružene; za Marijanski rov u literaturi se navode vrijednosti oko 10.900 do 11.000 m."
+    },
+    {
+      "date": "2026-11-21",
+      "id": "secer",
+      "question": "Koliko šećera ima u hrani?",
+      "sub": "Grama šećera u jednoj uobičajenoj porciji.",
+      "scale": {"unit":"g šećera","min":0,"max":60,"log":false,"ticks":[0,15,30,45,60]},
+      "items": [
+        {"name":"Kocka šećera","value":4},
+        {"name":"Banana","value":14},
+        {"name":"Jabuka","value":19},
+        {"name":"Kola (0,33 l)","value":35},
+        {"name":"Mliječna čokolada (100 g)","value":56}
+      ],
+      "note": "Približne vrijednosti; ovise o veličini porcije i proizvodu."
+    },
+    {
+      "date": "2026-11-22",
+      "id": "povijest",
+      "question": "Kada se dogodilo?",
+      "sub": "Godina događaja. Negativne godine su prije Krista.",
+      "scale": {"unit":"godina","min":-3000,"max":2000,"log":false,"ticks":[-3000,-2000,-1000,0,1000,2000]},
+      "items": [
+        {"name":"Velika piramida","value":-2560},
+        {"name":"Prve olimpijske igre","value":-776},
+        {"name":"Pad Zapadnog Rima","value":476},
+        {"name":"Otkriće Amerike","value":1492},
+        {"name":"Slijetanje na Mjesec","value":1969}
+      ],
+      "note": "Okvirne datacije: piramida oko 2560. pr. Kr., prve olimpijske igre 776. pr. Kr., pad Zapadnog Rimskog Carstva 476., Kolumbovo putovanje 1492., Apollo 11 1969."
+    },
+    {
+      "date": "2026-11-23",
+      "id": "brzine",
+      "question": "Koliko je brzo?",
+      "sub": "Tipična ili rekordna brzina.",
+      "scale": {"unit":"km/h, logaritamska skala: svaki razmak je deseterostruk","min":1,"max":100000,"log":true,"ticks":[1,10,100,1000,10000,100000]},
+      "items": [
+        {"name":"Šetnja","value":5},
+        {"name":"Usain Bolt (rekord)","value":44.7},
+        {"name":"Gepard","value":110},
+        {"name":"Putnički mlažnjak","value":900},
+        {"name":"ISS","value":27600}
+      ],
+      "note": "Bolt: najveća izmjerena brzina u utrci na 100 m. Gepard i mlažnjak su približno, ISS je orbitalna brzina."
+    },
+    {
+      "date": "2026-11-24",
+      "id": "gradovi",
+      "question": "Koliko stanovnika ima grad?",
+      "sub": "Stanovnici grada u administrativnim granicama.",
+      "scale": {"unit":"milijuna stanovnika","min":0,"max":10,"log":false,"ticks":[0,2,4,6,8,10]},
+      "items": [
+        {"name":"Split","value":0.16},
+        {"name":"Zagreb","value":0.77},
+        {"name":"Beč","value":2},
+        {"name":"Berlin","value":3.7},
+        {"name":"London","value":8.9}
+      ],
+      "note": "Približne vrijednosti iz posljednjih godina; za Zagreb i Split uzet je popis iz 2021."
+    },
+    {
+      "date": "2026-11-25",
+      "id": "zivotinje",
+      "question": "Koliko dugo žive životinje?",
+      "sub": "Tipičan životni vijek u godinama.",
+      "scale": {"unit":"godina, logaritamska skala: svaki razmak je deseterostruk","min":1,"max":1000,"log":true,"ticks":[1,10,100,1000]},
+      "items": [
+        {"name":"Miš","value":2},
+        {"name":"Pas","value":12},
+        {"name":"Konj","value":28},
+        {"name":"Slon","value":65},
+        {"name":"Grenlandski kit","value":200}
+      ],
+      "note": "Okvirne vrijednosti; za grenlandskog kita procjene idu i preko 200 godina."
+    },
+    {
+      "date": "2026-11-26",
+      "id": "gradjevine",
+      "question": "Koliko je visoka građevina?",
+      "sub": "Visina kako se uobičajeno navodi, s tornjem ili antenom.",
+      "scale": {"unit":"m","min":0,"max":900,"log":false,"ticks":[0,300,600,900]},
+      "items": [
+        {"name":"Katedrala (Zagreb)","value":108},
+        {"name":"Velika piramida","value":147},
+        {"name":"Eiffelov toranj","value":330},
+        {"name":"Empire State","value":443},
+        {"name":"Burj Khalifa","value":828}
+      ],
+      "note": "Zagrebačka katedrala: viši toranj; piramida: izvorna visina oko 147 m (danas oko 139 m); Eiffelov toranj i Empire State s antenom."
+    },
+    {
+      "date": "2026-11-27",
+      "id": "sport",
+      "question": "Na kojoj je visini?",
+      "sub": "Visina gola, mreže ili koša od tla.",
+      "scale": {"unit":"m","min":0,"max":3.5,"log":false,"ticks":[0,1,2,3]},
+      "items": [
+        {"name":"Teniska mreža","value":0.91},
+        {"name":"Hokejski gol","value":1.22},
+        {"name":"Rukometni gol","value":2},
+        {"name":"Odbojkaška mreža","value":2.43},
+        {"name":"Košarkaški koš","value":3.05}
+      ],
+      "note": "Teniska mreža u sredini 91 cm, hokejski gol (NHL) 1,22 m, rukometni gol 2 m, odbojkaška mreža za muškarce 2,43 m, koš 3,05 m."
+    },
+    {
+      "date": "2026-11-28",
+      "id": "rijeke",
+      "question": "Koliko je duga rijeka?",
+      "sub": "Ukupna duljina toka od izvora do ušća.",
+      "scale": {"unit":"km","min":0,"max":1400,"log":false,"ticks":[0,350,700,1050,1400]},
+      "items": [
+        {"name":"Cetina","value":105},
+        {"name":"Neretva","value":230},
+        {"name":"Kupa","value":296},
+        {"name":"Sava","value":945},
+        {"name":"Rajna","value":1233}
+      ],
+      "note": "Duljine su približne; izvori se razlikuju za nekoliko desetaka kilometara."
+    },
+    {
+      "date": "2026-11-29",
+      "id": "promjer",
+      "question": "Koliki je promjer?",
+      "sub": "Promjer nebeskog tijela.",
+      "scale": {"unit":"tisuća km, logaritamska skala: svaki razmak je deseterostruk","min":1,"max":2000,"log":true,"ticks":[1,10,100,1000]},
+      "items": [
+        {"name":"Mjesec","value":3.5},
+        {"name":"Mars","value":6.8},
+        {"name":"Zemlja","value":12.7},
+        {"name":"Jupiter","value":139.8},
+        {"name":"Sunce","value":1391}
+      ],
+      "note": "Okvirni ekvatorijalni promjeri."
+    },
+    {
+      "date": "2026-11-30",
+      "id": "voda",
+      "question": "Koliko posto vode ima u hrani?",
+      "sub": "Udio vode u masi namirnice.",
+      "scale": {"unit":"% vode","min":0,"max":100,"log":false,"ticks":[0,25,50,75,100]},
+      "items": [
+        {"name":"Med","value":17},
+        {"name":"Bijeli kruh","value":38},
+        {"name":"Kuhano jaje","value":75},
+        {"name":"Jabuka","value":86},
+        {"name":"Krastavac","value":96}
+      ],
+      "note": "Okvirni udjeli; ovise o sorti i obradi."
+    },
+    {
+      "date": "2026-12-01",
+      "id": "hr-povijest",
+      "question": "Kada se dogodilo u hrvatskoj povijesti?",
+      "sub": "Godina događaja.",
+      "scale": {"unit":"godina","min":900,"max":2050,"log":false,"ticks":[1000,1250,1500,1750,2000]},
+      "items": [
+        {"name":"Krunidba Tomislava","value":925},
+        {"name":"Osnutak sveučilišta","value":1669},
+        {"name":"Ukidanje kmetstva","value":1848},
+        {"name":"Referendum o neovisnosti","value":1991},
+        {"name":"Ulazak u EU","value":2013}
+      ],
+      "note": "Krunidba kralja Tomislava oko 925., osnutak Zagrebačkog sveučilišta 1669., ukidanje kmetstva 1848., referendum 1991., ulazak u EU 2013."
+    },
+    {
+      "date": "2026-12-02",
+      "id": "mase",
+      "question": "Koliko je teško?",
+      "sub": "Prosječna masa odraslog primjerka.",
+      "scale": {"unit":"kg, logaritamska skala: svaki razmak je deseterostruk","min":1,"max":10000,"log":true,"ticks":[1,10,100,1000,10000]},
+      "items": [
+        {"name":"Mačka","value":4},
+        {"name":"Odrasla osoba","value":70},
+        {"name":"Konj","value":500},
+        {"name":"Osobni automobil","value":1400},
+        {"name":"Slon","value":5000}
+      ],
+      "note": "Prosječne vrijednosti; stvarna masa jako varira, a slon je afrički mužjak."
+    },
+    {
+      "date": "2026-12-03",
+      "id": "povrsina",
+      "question": "Koliko je velika država?",
+      "sub": "Ukupna površina.",
+      "scale": {"unit":"tisuća km², logaritamska skala: svaki razmak je deseterostruk","min":10,"max":20000,"log":true,"ticks":[10,100,1000,10000]},
+      "items": [
+        {"name":"Slovenija","value":20.3},
+        {"name":"Hrvatska","value":56.6},
+        {"name":"Njemačka","value":357.6},
+        {"name":"Indija","value":3287},
+        {"name":"Rusija","value":17098}
+      ],
+      "note": "Površine zaokružene na desetinku tisuće četvornih kilometara."
+    },
+    {
+      "date": "2026-12-04",
+      "id": "dovrseno",
+      "question": "Kada je građevina dovršena?",
+      "sub": "Godina dovršetka ili otvorenja.",
+      "scale": {"unit":"godina","min":0,"max":2000,"log":false,"ticks":[0,500,1000,1500,2000]},
+      "items": [
+        {"name":"Koloseum","value":80},
+        {"name":"Dioklecijanova palača","value":305},
+        {"name":"Taj Mahal","value":1653},
+        {"name":"Eiffelov toranj","value":1889},
+        {"name":"Opera u Sydneyu","value":1973}
+      ],
+      "note": "Koloseum otvoren 80., Dioklecijanova palača oko 305., kompleks Taj Mahala 1653., Eiffelov toranj 1889., Opera u Sydneyu 1973."
+    },
+    {
+      "date": "2026-12-05",
+      "id": "alkohol",
+      "question": "Koliko alkohola ima u piću?",
+      "sub": "Volumni udio alkohola.",
+      "scale": {"unit":"% alkohola","min":0,"max":80,"log":false,"ticks":[0,20,40,60,80]},
+      "items": [
+        {"name":"Pivo","value":5},
+        {"name":"Vino","value":12},
+        {"name":"Pelinkovac","value":31},
+        {"name":"Rakija","value":40},
+        {"name":"Absint","value":70}
+      ],
+      "note": "Tipične vrijednosti; stvarni udio ovisi o proizvodu."
+    },
+    {
+      "date": "2026-12-06",
+      "id": "udaljenosti",
+      "question": "Koliko je grad udaljen od Zagreba?",
+      "sub": "Zračna linija, ne cesta.",
+      "scale": {"unit":"km zračnom linijom","min":0,"max":1500,"log":false,"ticks":[0,500,1000,1500]},
+      "items": [
+        {"name":"Ljubljana","value":115},
+        {"name":"Beč","value":270},
+        {"name":"Rim","value":515},
+        {"name":"Pariz","value":1080},
+        {"name":"London","value":1340}
+      ],
+      "note": "Približne udaljenosti od središta do središta, zaokružene na pet kilometara."
+    },
+    {
+      "date": "2026-12-07",
+      "id": "planeti",
+      "question": "Koliko je planet udaljen od Sunca?",
+      "sub": "Prosječna udaljenost.",
+      "scale": {"unit":"milijuna km, logaritamska skala: svaki razmak je deseterostruk","min":10,"max":10000,"log":true,"ticks":[10,100,1000,10000]},
+      "items": [
+        {"name":"Merkur","value":58},
+        {"name":"Zemlja","value":150},
+        {"name":"Mars","value":228},
+        {"name":"Jupiter","value":778},
+        {"name":"Neptun","value":4495}
+      ],
+      "note": "Prosječne udaljenosti, zaokružene."
+    },
+    {
+      "date": "2026-12-08",
+      "id": "tehnologija",
+      "question": "Kada je pokrenuto?",
+      "sub": "Godina javnog pokretanja ili prve prodaje.",
+      "scale": {"unit":"godina","min":1995,"max":2025,"log":false,"ticks":[1995,2000,2005,2010,2015,2020,2025]},
+      "items": [
+        {"name":"Google","value":1998},
+        {"name":"Wikipedia","value":2001},
+        {"name":"YouTube","value":2005},
+        {"name":"iPhone","value":2007},
+        {"name":"ChatGPT","value":2022}
+      ],
+      "note": "Google osnovan 1998., Wikipedia pokrenuta 2001., YouTube 2005., prvi iPhone u prodaji 2007., ChatGPT u studenom 2022."
+    },
+    {
+      "date": "2026-12-09",
+      "id": "buka",
+      "question": "Koliko je glasan zvuk?",
+      "sub": "Tipična razina zvuka na uobičajenoj udaljenosti.",
+      "scale": {"unit":"dB","min":0,"max":140,"log":false,"ticks":[0,35,70,105,140]},
+      "items": [
+        {"name":"Šapat","value":30},
+        {"name":"Razgovor","value":60},
+        {"name":"Usisavač","value":75},
+        {"name":"Motocikl","value":95},
+        {"name":"Rock koncert","value":110}
+      ],
+      "note": "Tipične vrijednosti; stvarna glasnoća ovisi o udaljenosti i uređaju."
+    },
+    {
+      "date": "2026-12-10",
+      "id": "jezera",
+      "question": "Koliko je duboko jezero?",
+      "sub": "Najveća dubina.",
+      "scale": {"unit":"m, logaritamska skala: svaki razmak je deseterostruk","min":10,"max":2000,"log":true,"ticks":[10,100,1000]},
+      "items": [
+        {"name":"Bledsko jezero","value":30},
+        {"name":"Kozjak (Plitvice)","value":46},
+        {"name":"Vransko (Cres)","value":74},
+        {"name":"Ohridsko jezero","value":289},
+        {"name":"Bajkal","value":1642}
+      ],
+      "note": "Okvirne najveće dubine."
+    },
+    {
+      "date": "2026-12-11",
+      "id": "drzave",
+      "question": "Koliko stanovnika ima država?",
+      "sub": "Broj stanovnika u milijunima.",
+      "scale": {"unit":"milijuna stanovnika, logaritamska skala: svaki razmak je deseterostruk","min":0.1,"max":2000,"log":true,"ticks":[0.1,1,10,100,1000]},
+      "items": [
+        {"name":"Island","value":0.39},
+        {"name":"Slovenija","value":2.1},
+        {"name":"Hrvatska","value":3.9},
+        {"name":"Njemačka","value":84},
+        {"name":"Indija","value":1430}
+      ],
+      "note": "Približne procjene iz posljednjih godina; za Hrvatsku popis iz 2021."
+    },
+    {
+      "date": "2026-12-12",
+      "id": "dugo",
+      "question": "Koliko je dugo?",
+      "sub": "Duljina mosta, tunela ili zida.",
+      "scale": {"unit":"km, logaritamska skala: svaki razmak je deseterostruk","min":1,"max":30000,"log":true,"ticks":[1,10,100,1000,10000]},
+      "items": [
+        {"name":"Pelješki most","value":2.4},
+        {"name":"Tunel Sveti Rok","value":5.7},
+        {"name":"Tunel Lærdal","value":24.5},
+        {"name":"Tunel pod Kanalom","value":50.5},
+        {"name":"Kineski zid","value":21196}
+      ],
+      "note": "Pelješki most 2,4 km, Sveti Rok 5,7 km, Lærdal u Norveškoj 24,5 km, tunel pod Kanalom 50,5 km, Kineski zid prema službenom mjerenju oko 21.200 km."
+    },
+    {
+      "date": "2026-12-13",
+      "id": "godina-planeta",
+      "question": "Koliko traje godina na planetu?",
+      "sub": "Jedan puni krug oko Sunca.",
+      "scale": {"unit":"Zemljinih dana, logaritamska skala: svaki razmak je deseterostruk","min":10,"max":100000,"log":true,"ticks":[10,100,1000,10000,100000]},
+      "items": [
+        {"name":"Merkur","value":88},
+        {"name":"Venera","value":225},
+        {"name":"Mars","value":687},
+        {"name":"Jupiter","value":4333},
+        {"name":"Neptun","value":60190}
+      ],
+      "note": "Okvirno trajanje ophodnje oko Sunca u Zemljinim danima."
+    },
+    {
+      "date": "2026-12-14",
+      "id": "vrijeme",
+      "question": "Prije koliko je godina?",
+      "sub": "Okvirno vrijeme događaja.",
+      "scale": {"unit":"milijuna godina, logaritamska skala: svaki razmak je deseterostruk","min":0.1,"max":20000,"log":true,"ticks":[0.1,1,10,100,1000,10000]},
+      "items": [
+        {"name":"Prvi Homo sapiens","value":0.3},
+        {"name":"Izumiranje dinosaura","value":66},
+        {"name":"Prvi dinosauri","value":230},
+        {"name":"Nastanak Zemlje","value":4540},
+        {"name":"Veliki prasak","value":13800}
+      ],
+      "note": "Okvirne znanstvene procjene: Homo sapiens oko 300.000 godina, izumiranje dinosaura prije oko 66 milijuna, prvi dinosauri oko 230 milijuna, Zemlja oko 4,54 milijarde, Veliki prasak oko 13,8 milijardi."
+    },
+    {
+      "date": "2026-12-15",
+      "id": "kalorije",
+      "question": "Koliko energije ima u 100 grama?",
+      "sub": "Namirnice kakve se obično jedu.",
+      "scale": {"unit":"kcal na 100 g","min":0,"max":1000,"log":false,"ticks":[0,250,500,750,1000]},
+      "items": [
+        {"name":"Jabuka","value":52},
+        {"name":"Kuhano jaje","value":155},
+        {"name":"Bijeli kruh","value":265},
+        {"name":"Mliječna čokolada","value":535},
+        {"name":"Maslinovo ulje","value":884}
+      ],
+      "note": "Okvirne vrijednosti iz nutritivnih tablica; proizvodi se međusobno razlikuju."
+    }
+  ]
+}
